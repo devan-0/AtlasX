@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #060a12;
+    --text-primary: #f8fafc;
+  }
+
+  html.bright {
+    --bg-primary: #f8fafc;
+    --text-primary: #0f172a;
+  }
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+code, kbd, samp, pre, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Glassmorphism Utility Classes */
+.glass-panel {
+  background: rgba(13, 20, 33, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-bright {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 77, 21, 0.6);
+}
+
+/* Leaflet Map overrides for dark styling */
+.leaflet-container {
+  background: #060a12 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+.leaflet-bar a {
+  background-color: rgba(13, 20, 33, 0.9) !important;
+  color: #fff !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1) !important;
+}
+.leaflet-bar a:hover {
+  background-color: rgba(232, 64, 32, 0.8) !important;
+}
