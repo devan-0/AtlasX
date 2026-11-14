@@ -1,6 +1,5 @@
 import React from 'react';
 import { Rocket, FileCode, Heart, Globe, ExternalLink } from 'lucide-react';
-import { APP_DOWNLOADS } from '../data/marsData';
 
 export default function Footer() {
   return (
@@ -30,31 +29,30 @@ export default function Footer() {
           <div><a href="#overview" className="hover:text-white transition-colors">Mission Overview</a></div>
           <div><a href="#streams" className="hover:text-white transition-colors">4 Planetary Streams</a></div>
           <div><a href="#console" className="hover:text-white transition-colors">Live Web Console</a></div>
-          <div><a href="#downloads" className="hover:text-white transition-colors">Windows Desktop Downloads</a></div>
           <div><a href="#science" className="hover:text-white transition-colors">Data Attribution</a></div>
         </div>
 
-        {/* Downloads & Source */}
+        {/* Scientific Pipelines */}
         <div className="space-y-2">
-          <div className="text-white font-bold uppercase text-[11px] tracking-wider mb-2">Resources</div>
-          <div>
-            <a href={APP_DOWNLOADS.installer.downloadUrl} download className="hover:text-white transition-colors">
-              Windows Installer ({APP_DOWNLOADS.installer.fileSizeMb})
-            </a>
-          </div>
-          <div>
-            <a href={APP_DOWNLOADS.portable.downloadUrl} download className="hover:text-white transition-colors">
-              Portable Executable ({APP_DOWNLOADS.portable.fileSizeMb})
-            </a>
-          </div>
-          <div>
-            <a href={APP_DOWNLOADS.sourceCode.downloadUrl} download className="hover:text-white transition-colors">
-              Source Code ZIP ({APP_DOWNLOADS.sourceCode.fileSizeMb})
-            </a>
-          </div>
+          <div className="text-white font-bold uppercase text-[11px] tracking-wider mb-2">Scientific Pipelines</div>
           <div>
             <a href="https://trek.nasa.gov/mars/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
               NASA Mars Trek <ExternalLink size={10} />
+            </a>
+          </div>
+          <div>
+            <a href="https://astrogeology-usgs.hub.arcgis.com/pages/interactive-maps-mars" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+              USGS Astrogeology <ExternalLink size={10} />
+            </a>
+          </div>
+          <div>
+            <a href="https://mars.nasa.gov/mars2020/multimedia/raw-images/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+              Mars 2020 Raw Archive <ExternalLink size={10} />
+            </a>
+          </div>
+          <div>
+            <a href="https://ssd.jpl.nasa.gov/horizons/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors flex items-center gap-1">
+              JPL Horizons DE441 <ExternalLink size={10} />
             </a>
           </div>
         </div>

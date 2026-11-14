@@ -1,5 +1,5 @@
 import React from 'react';
-import { Rocket, Sun, Moon, Volume2, VolumeX, Download, Play, Compass } from 'lucide-react';
+import { Rocket, Sun, Moon, Volume2, VolumeX, Play, Compass } from 'lucide-react';
 import { sound } from '../utils/audio';
 
 interface NavbarProps {
@@ -39,7 +39,6 @@ export default function Navbar({ theme, onToggleTheme, soundEnabled, onToggleSou
           <a href="#overview" className="text-slate-300 hover:text-orange-400 transition-colors">Overview</a>
           <a href="#streams" className="text-slate-300 hover:text-orange-400 transition-colors">4 Planetary Streams</a>
           <a href="#console" className="text-slate-300 hover:text-orange-400 transition-colors">Live Web Console</a>
-          <a href="#downloads" className="text-slate-300 hover:text-orange-400 transition-colors">Downloads</a>
           <a href="#science" className="text-slate-300 hover:text-orange-400 transition-colors">Data Attribution</a>
         </nav>
 
@@ -73,13 +72,13 @@ export default function Navbar({ theme, onToggleTheme, soundEnabled, onToggleSou
             {isBright ? <Moon size={16} className="text-indigo-400" /> : <Sun size={16} className="text-amber-400" />}
           </button>
 
-          {/* Download App Button CTA */}
+          {/* Launch Web Console Button CTA */}
           <a
-            href="#downloads"
+            href="#console"
             className="hidden sm:flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold uppercase tracking-wider text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-500 hover:to-amber-500 shadow-md shadow-orange-950/40 hover:shadow-orange-500/20 active:scale-95 transition-all"
           >
-            <Download size={13} />
-            <span>Download App</span>
+            <Play size={13} className="fill-white" />
+            <span>Launch Console</span>
           </a>
         </div>
       </div>

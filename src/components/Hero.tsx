@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Rocket, Download, Play, Sparkles, ChevronRight, Compass, Shield, Clock, Globe } from 'lucide-react';
+import { Rocket, Play, Sparkles, ChevronRight, Compass, Shield, Clock, Globe } from 'lucide-react';
 import MarsGlobe3D from './MarsGlobe3D';
 import { calculateMarsClock, MarsClockState } from '../utils/marsTime';
-import { MARS_LANDMARKS, MarsLandmark, APP_DOWNLOADS } from '../data/marsData';
+import { MARS_LANDMARKS, MarsLandmark } from '../data/marsData';
 import { sound } from '../utils/audio';
 
 export default function Hero() {
@@ -94,20 +94,12 @@ export default function Hero() {
             </a>
 
             <a
-              href="#downloads"
+              href="#streams"
               onClick={() => sound.playClick()}
-              className="flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs sm:text-sm font-semibold text-slate-200 hover:text-white bg-white/10 hover:bg-white/15 border border-white/20 active:scale-95 transition-all"
+              className="flex items-center gap-2 px-5 py-3 rounded-xl font-mono text-xs sm:text-sm font-semibold text-slate-200 hover:text-white bg-white/10 hover:bg-white/15 border border-white/20 active:scale-95 transition-all cursor-pointer"
             >
-              <Download size={16} />
-              <span>Download Desktop App</span>
-            </a>
-
-            <a
-              href={APP_DOWNLOADS.sourceCode.downloadUrl}
-              download
-              className="flex items-center gap-1.5 px-4 py-3 rounded-xl font-mono text-xs font-semibold text-cyan-300 hover:text-cyan-200 bg-cyan-950/40 hover:bg-cyan-900/50 border border-cyan-800/40 transition-all"
-            >
-              <span>Source ZIP ({APP_DOWNLOADS.sourceCode.fileSizeMb})</span>
+              <Compass size={16} className="text-cyan-400" />
+              <span>Explore Planetary Streams</span>
             </a>
           </div>
 

@@ -41,9 +41,6 @@ AtlasX is a web-based planetary exploration, cartography, and mission-planning p
   * **Mars 2020 Raw Outcrop Feeds:** Outcrop imagery and sample tube caching workflow from Jezero and Gale craters.
 * **Real-Time Astronomical Telemetry HUD:**
   * Earth UTC, Mars Sol Date (MSD), Coordinated Mars Time (MTC Airy-0), Solar Longitude ($L_s$), Heliocentric Distance (AU), and Solar Irradiance ($W/m^2$) calculated live using the Allison & McEwen GISS Mars24 algorithm.
-* **Desktop App Download Center:**
-  * One-click downloads for `AtlasX-Setup.exe` (92.2 MB), `AtlasX 1.0.0.exe` (92.0 MB), and `AtlasX-SourceCode.zip` (1.09 MB).
-  * Authenticode digital signature details (`CN=AtlasX Code Signing`).
 * **Design & Theme Support:**
   * Premium glassmorphism aesthetic.
   * Full **Bright Mode** and **Dark Mode** toggle.

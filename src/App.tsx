@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import FourStreams from './components/FourStreams';
 import InteractiveConsole from './components/InteractiveConsole';
-import Downloads from './components/Downloads';
 import ScienceAttribution from './components/ScienceAttribution';
 import DisclaimerBanner from './components/DisclaimerBanner';
 import Footer from './components/Footer';
@@ -60,7 +59,6 @@ export default function App() {
           <Hero />
           <FourStreams />
           <InteractiveConsole />
-          <Downloads />
           <ScienceAttribution />
           <DisclaimerBanner />
         </main>

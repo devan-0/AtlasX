@@ -122,28 +122,3 @@ export const OUTCROP_FEEDS: OutcropFeed[] = [
     sampleStatus: 'abraded',
   },
 ];
-
-export const APP_DOWNLOADS = {
-  version: '1.0.0',
-  releaseDate: 'November 2026',
-  installer: {
-    fileName: 'AtlasX-Setup.exe',
-    fileSizeMb: '92.2 MB',
-    type: 'NSIS Installer (Windows 64-bit)',
-    downloadUrl: '/downloads/AtlasX-Setup.exe',
-    authenticode: 'CN=AtlasX Code Signing (SHA-256)',
-  },
-  portable: {
-    fileName: 'AtlasX 1.0.0.exe',
-    fileSizeMb: '92.0 MB',
-    type: 'Portable Executable (Standalone zero-install)',
-    downloadUrl: '/downloads/AtlasX 1.0.0.exe',
-    authenticode: 'CN=AtlasX Code Signing (SHA-256)',
-  },
-  sourceCode: {
-    fileName: 'AtlasX-SourceCode.zip',
-    fileSizeMb: '1.09 MB',
-    type: 'Source Code Archive (Vite + Electron + Python)',
-    downloadUrl: '/downloads/AtlasX-SourceCode.zip',
-  },
-};
