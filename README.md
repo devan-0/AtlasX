@@ -89,7 +89,6 @@ Because the Vite dev server is configured with `host: true`, anyone on the same 
 1. When you run `npm run dev`, check the terminal output:
    ```
      ➜  Local:   http://localhost:5173/
-     ➜  Network: http://192.168.1.15:5173/
    ```
 2. Open the `Network` address (e.g. `http://192.168.1.15:5173`) in mobile Safari, Chrome, or Firefox.
 3. Enjoy the full interactive 3D Mars globe with multi-touch gestures!
